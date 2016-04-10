@@ -73,10 +73,16 @@ This should upload the artifacts, .jar .pom with their respective signatures.
 
 
 13. Go to [Sonatype OSS](https://oss.sonatype.org/) 
+
 14. Login by cliking on the upper right corner of the screen
 When you first upload the artifacts they are in a "staging area" not yet released
+
 15. Scroll down to your artifact and verify that it has the files you want, additionally you can verify the jar with `jar tvf` to check the contents
+![screen shot 00](sonatype_00.png)
+
 16. To [release our artifact](http://central.sonatype.org/pages/releasing-the-deployment.html) we need to first "Close" 
+![screen shot 01](sonatype_01.png)
+
 17. Check in the activity tab that everything is successful, or address any issues encountered
 18. Click "Release"
 19. After a bit, we should be able to get the dependency in other projects by adding to the `libraryDependencies`
